@@ -70,7 +70,8 @@ Before you begin, ensure you have the following installed:
     Create a `.env.local` file in the root directory and add your environment variables:
 
     ```env
-    NEXT_PUBLIC_API_URL=http://localhost:5000
+    OPENAI_API_KEY = "xxxxxxxx"
+    OPENAI_API_BASE= "http://127.0.0.1:5000/v1"
     ```
 
 4. **Run the Development Server**
@@ -81,19 +82,14 @@ Before you begin, ensure you have the following installed:
     npm run dev
     ```
 
-    Or using yarn:
-
-    ```bash
-    yarn dev
-    ```
-
+   
 5. **Run the Text Generation WebUI**
 
     Follow the instructions in the Text Generation WebUI documentation to set up and run the WebUI on your local environment.
 
     ```bash
     cd /path/to/text-generation-webui
-    ./start_linux.sh
+    ./start_linux.sh -api
     ```
 
 ## Usage
